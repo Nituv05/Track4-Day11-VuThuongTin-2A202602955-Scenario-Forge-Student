@@ -1,0 +1,78 @@
+{
+  "source": "additional diagnostic replay of TRAIN draws; not used for selection",
+  "policy": {
+    "T": 2.0
+  },
+  "params": {
+    "cutT0": 1.0418842951991754,
+    "cutDur": 3.9528413251398042,
+    "cutV": 12.995630872084917,
+    "cutDs": 6.1909747179815255,
+    "pedT0": 13.614099452309183,
+    "pedV": 0.6953086865159016,
+    "busGo": 12.023316196484554,
+    "tgT": 1.4619741816011396,
+    "cutGap": 10.523193769961459,
+    "pedGap": 2.066223967345511,
+    "mu": 0.5,
+    "pedLook": 0,
+    "cutBrake": 0.0,
+    "civil": true
+  },
+  "baseline_events": [],
+  "candidate_events": [
+    {
+      "t": 21.85,
+      "f": 437,
+      "a": "ego",
+      "b": "P1",
+      "kind": "block",
+      "x": 120.88575744628906,
+      "z": 2.624234437942505,
+      "fake": false
+    }
+  ],
+  "mode": "crosswalk_block",
+  "baseline": {
+    "pedestrian_first_motion": 13.65,
+    "ego_at_candidate_event": [
+      118.985595703125,
+      1.75,
+      1.0,
+      0.0,
+      0.0,
+      -4.90500020980835
+    ],
+    "ped_at_candidate_event": [
+      122.0,
+      3.4984688758850098,
+      0.0,
+      -1.0,
+      0.6953086853027344,
+      0.0
+    ],
+    "cutin_first_lateral_motion": 19.25,
+    "pedestrian_first_visible": 0.0
+  },
+  "candidate": {
+    "pedestrian_first_motion": 13.65,
+    "ego_at_candidate_event": [
+      119.77152252197266,
+      1.75,
+      1.0,
+      0.0,
+      0.0,
+      -4.90500020980835
+    ],
+    "ped_at_candidate_event": [
+      122.0,
+      3.4984688758850098,
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    "cutin_first_lateral_motion": 19.400000000000002,
+    "pedestrian_first_visible": 0.0
+  }
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "file": "bus_bypass.png",
+    "source": "viewer.json",
+    "run_id": "B-01",
+    "mode": "bus_bypass",
+    "time": 12.600000000000001,
+    "events": [
+      {
+        "t": 12.600000000000001,
+        "f": 252,
+        "a": "ego",
+        "b": "C2",
+        "kind": "contact",
+        "x": 93.4499589525945,
+        "z": 2.6827634078012954,
+        "fake": false
+      }
+    ]
+  },
+  {
+    "file": "crosswalk_block.png",
+    "source": "viewer.json",
+    "run_id": "C-01",
+    "mode": "crosswalk_block",
+    "time": 19.150000000000002,
+    "events": [
+      {
+        "t": 19.150000000000002,
+        "f": 383,
+        "a": "ego",
+        "b": "P1",
+        "kind": "block",
+        "x": 121.05329533647458,
+        "z": 2.6032639525030734,
+        "fake": false
+      }
+    ]
+  },
+  {
+    "file": "replay.png",
+    "source": "viewer.json",
+    "run_id": "R-01",
+    "mode": "replay",
+    "time": 17.7,
+    "events": [
+      {
+        "t": 17.7,
+        "f": 354,
+        "a": "ego",
+        "b": "TG",
+        "kind": "contact",
+        "x": 112.20571882739523,
+        "z": 1.75,
+        "fake": true
+      }
+    ]
+  },
+  {
+    "file": "fix_ghost.png",
+    "source": "viewer.json + fix.json: chosen.policy",
+    "run_id": "B-01",
+    "policy": {
+      "cutinLat": 3
+    },
+    "baseline_event": {
+      "t": 12.600000000000001,
+      "f": 252,
+      "a": "ego",
+      "b": "C2",
+      "kind": "contact",
+      "x": 93.4499589525945,
+      "z": 2.6827634078012954,
+      "fake": false
+    },
+    "baseline_readout": "va chạm 12,6 s",
+    "time": 12.600000000000001,
+    "events": []
+  },
+  {
+    "file": "hazard_brake.png",
+    "source": "hazard.json",
+    "mode": "L1 braking after trigger",
+    "time": 1.05,
+    "events": []
+  }
+]
