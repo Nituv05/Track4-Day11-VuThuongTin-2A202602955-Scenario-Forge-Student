@@ -1,0 +1,147 @@
+{
+ "file": "hazard.json",
+ "hazards": [
+  {
+   "who": "L1",
+   "decel": 6.5,
+   "dur": 2.5,
+   "t0": 1,
+   "trig": 45,
+   "type": "brake"
+  }
+ ],
+ "space": {
+  "h0_decel": [
+   4.4145,
+   6.867
+  ],
+  "h0_dur": [
+   2.0,
+   3.0
+  ],
+  "h0_trig": [
+   40.0,
+   50.0
+  ]
+ },
+ "world": "town",
+ "exposure": 0.0016217788117394414,
+ "why": "L1 phanh de tranh vat can bat ngo, khi ego dang bam theo. NHTSA DOT HS 810 846 (2007), Table 34, trang in 88 (PDF 117): https://www.nhtsa.gov/sites/nhtsa.gov/files/analyses20of20rear-end20crashes20and20near-crashes2028dot20hs208102084629.pdf ; tan suat >0.45g la 9/1000 mile, >0.70g la 0.3/1000 mile, nen lop (0.45g,0.70g] co 8.7/1000 mile. Chon decel=0.45*9.81 den 0.70*9.81 m/s2; thu phan bo deu de stress-test, khong nhan la phan bo thuc. dur=2-3 s tu thoi gian dung cua L1 ban dau 12.4 m/s: v/a=1.81-2.81 s. trig=40-50 m la dai thiet ke quanh khoang dung ego o 12 m/s: 12*2.5 + 12^2/(2*3.4)=51.18 m (FHWA, Section 3.6.1: https://www.fhwa.dot.gov/publications/research/safety/04091/03.cfm); khong phai khoang cach kich hoat do ngoai doi. t0=1 s de xe on dinh truoc su kien; khong thay doi t0 trong sweep. Quy uoc chuyen tham chieu 300 m, mot xe dan L1; exposure=8.7*(0.3/1.609344)/1000=0.0016217788117394414 su kien/chuyen. Day la suy ra tu du lieu My cu cho mot xe dan, chua hieu chinh theo dia phuong, ty le bam xe, hay duong uot; khong phai tan suat da do tai thi tran A. Chi bao cao per_trip duoi gia dinh nay. Cac mau decel > mu*g bi loai; p cua sweep co dieu kien tren tap kha thi. Khong sao chep khoang space vi du README.",
+ "exact": {
+  "planner": []
+ },
+ "infeasible": 285,
+ "accepted": 0.81,
+ "conditional_on": "your town's traffic",
+ "baseline": {
+  "n": 1215,
+  "crashes": 2,
+  "avoidable": 0,
+  "unavoidable": 0,
+  "unattributed": 2,
+  "low_speed": 0,
+  "avoidable_foreknown": 0,
+  "overlap_at_start": 0,
+  "by_hazard": {
+   "unattributed": 2
+  },
+  "examples": [
+   {
+    "params": {
+     "cutT0": 10.300200412470181,
+     "cutDur": 3.6614201812625353,
+     "cutV": 12.19043539400308,
+     "cutDs": 5.008281236691033,
+     "pedT0": 5.102976495009527,
+     "pedV": 1.5033016707057532,
+     "busGo": 16.51057638246419,
+     "tgT": 0.6208629539758028,
+     "cutGap": 6.557197066300555,
+     "pedGap": 4.867914851467333,
+     "mu": 0.8,
+     "pedLook": 0,
+     "cutBrake": 0.0,
+     "civil": true,
+     "h0_decel": 5.147334835005541,
+     "h0_dur": 2.048638338923731,
+     "h0_trig": 43.20632964449165
+    },
+    "kind": "unattributed",
+    "low_speed": false,
+    "other": "C2",
+    "t": 16.05,
+    "v_ego": 1.6033021211624146,
+    "fire_t": null,
+    "brake_t": null
+   },
+   {
+    "params": {
+     "cutT0": 1.4624878683295197,
+     "cutDur": 4.540289760357481,
+     "cutV": 11.846761596064031,
+     "cutDs": -4.887808013924836,
+     "pedT0": 5.77528489809419,
+     "pedV": 1.3915650035997613,
+     "busGo": 17.805838323427153,
+     "tgT": 1.2298176214215863,
+     "cutGap": 6.792570301542435,
+     "pedGap": 5.9023241092887435,
+     "mu": 0.8,
+     "pedLook": 1,
+     "cutBrake": 0.0,
+     "civil": true,
+     "h0_decel": 5.093404576022574,
+     "h0_dur": 2.174944145480952,
+     "h0_trig": 47.11785126791986
+    },
+    "kind": "unattributed",
+    "low_speed": false,
+    "other": "C2",
+    "t": 16.4,
+    "v_ego": 3.3944010734558105,
+    "fire_t": null,
+    "brake_t": null
+   }
+  ],
+  "p": 0.0,
+  "lo": 0.0,
+  "hi": 0.003151845161832349,
+  "per_trip": 0.0,
+  "per_trip_hi": 5.111595701343174e-06
+ },
+ "chosen": {
+  "n": 1215,
+  "crashes": 0,
+  "avoidable": 0,
+  "unavoidable": 0,
+  "unattributed": 0,
+  "low_speed": 0,
+  "avoidable_foreknown": 0,
+  "overlap_at_start": 0,
+  "by_hazard": {},
+  "examples": [],
+  "p": 0.0,
+  "lo": 0.0,
+  "hi": 0.003151845161832349,
+  "per_trip": 0.0,
+  "per_trip_hi": 5.111595701343174e-06
+ },
+ "_run": {
+  "mssv": "202602955",
+  "town": "A",
+  "quick": false,
+  "step": "mine",
+  "salted": false,
+  "budgets": {
+   "replay_n": 400,
+   "mc_n": 3000,
+   "iters": 8,
+   "per_iter": 300,
+   "final_n": 600,
+   "seeds": 3,
+   "fix_n": 400,
+   "progress_n": 256,
+   "mine_n": 1500
+  }
+ }
+}
