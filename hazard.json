@@ -1,0 +1,47 @@
+{
+  "format": "avsim-studio/1",
+  "params": {
+    "cutT0": 6.5,
+    "cutDur": 2.4,
+    "cutV": 15,
+    "pedT0": 11,
+    "pedV": 1.45,
+    "busGo": 17,
+    "cutDs": -4,
+    "tgT": 0.9,
+    "mu": 0.8,
+    "cutGap": 12,
+    "cutBrake": 0,
+    "pedGap": 4.5,
+    "pedLook": 1,
+    "civil": true
+  },
+  "policy": {},
+  "hazards": [
+    {
+      "who": "L1",
+      "decel": 6.5,
+      "dur": 2.5,
+      "t0": 1,
+      "trig": 45,
+      "type": "brake"
+    }
+  ],
+  "ego": "planner",
+  "space": {
+    "h0_decel": [
+      4.4145,
+      6.867
+    ],
+    "h0_dur": [
+      2.0,
+      3.0
+    ],
+    "h0_trig": [
+      40.0,
+      50.0
+    ]
+  },
+  "exposure": 0.0016217788117394414,
+  "why": "L1 phanh de tranh vat can bat ngo, khi ego dang bam theo. NHTSA DOT HS 810 846 (2007), Table 34, trang in 88 (PDF 117): https://www.nhtsa.gov/sites/nhtsa.gov/files/analyses20of20rear-end20crashes20and20near-crashes2028dot20hs208102084629.pdf ; tan suat >0.45g la 9/1000 mile, >0.70g la 0.3/1000 mile, nen lop (0.45g,0.70g] co 8.7/1000 mile. Chon decel=0.45*9.81 den 0.70*9.81 m/s2; thu phan bo deu de stress-test, khong nhan la phan bo thuc. dur=2-3 s tu thoi gian dung cua L1 ban dau 12.4 m/s: v/a=1.81-2.81 s. trig=40-50 m la dai thiet ke quanh khoang dung ego o 12 m/s: 12*2.5 + 12^2/(2*3.4)=51.18 m (FHWA, Section 3.6.1: https://www.fhwa.dot.gov/publications/research/safety/04091/03.cfm); khong phai khoang cach kich hoat do ngoai doi. t0=1 s de xe on dinh truoc su kien; khong thay doi t0 trong sweep. Quy uoc chuyen tham chieu 300 m, mot xe dan L1; exposure=8.7*(0.3/1.609344)/1000=0.0016217788117394414 su kien/chuyen. Day la suy ra tu du lieu My cu cho mot xe dan, chua hieu chinh theo dia phuong, ty le bam xe, hay duong uot; khong phai tan suat da do tai thi tran A. Chi bao cao per_trip duoi gia dinh nay. Cac mau decel > mu*g bi loai; p cua sweep co dieu kien tren tap kha thi. Khong sao chep khoang space vi du README."
+}
